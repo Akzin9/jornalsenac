@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #c4170c;
+      background-image: linear-gradient(to right, #DC8014, #DCAD01, #0801D1);
       color: #fff;
       padding: 15px 0;
       text-align: center;
@@ -22,9 +22,17 @@
       font-weight: bold;
       letter-spacing: 1px;
     }
-
+    div#imgs {
+      
+    }
+    div#imgs img {
+      mix-blend-mode: multiply;
+      height: 150px;
+      width: 220px;
+      border-radius: 150px;
+    }
     nav {
-      background-color: #a01309;
+      background-color: #001f3d;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -63,7 +71,7 @@
     }
 
     .main-news h2 {
-      color: #c4170c;
+      color: #DC8014;
       margin: 15px 0 10px;
     }
 
@@ -81,7 +89,7 @@
     }
 
     aside h3 {
-      color: #c4170c;
+      color: #DC8014;
       border-bottom: 2px solid #c4170c;
       padding-bottom: 5px;
     }
@@ -113,45 +121,51 @@
       margin-top: 40px;
       font-size: 14px;
     }
+    p {
+      text-align: justify;
+    }
 
     /* ---------- RESPONSIVIDADE ---------- */
-    @media (max-width: 800px) {
-      main {
-        grid-template-columns: 1fr;
-      }
-    }
+    
   </style>
 </head>
 <body>
+  <div id="flexx">
+    <header>
+      <div id="imgs">
+      <img src="./src/newlogojornal.jpg" alt="Logo jornal"></div>
+      </div>
+    </header>
 
-  <header>JORNAL AGORA</header>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Política</a>
+      <a href="#">Economia</a>
+      <a href="#">Esportes</a>
+      <a href="#">Entretenimento</a>
+      <a href="#">Tecnologia</a>
+    </nav>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Política</a>
-    <a href="#">Economia</a>
-    <a href="#">Esportes</a>
-    <a href="#">Entretenimento</a>
-    <a href="#">Tecnologia</a>
-  </nav>
+    <main>
+      <article class="main-news">
+        <h2>Visita ao STJ</h2>
+        <p>No dia 08/10/2025, a turma 160 realizou uma visita técnica ao Superior Tribunal de Justiça (STJ), em Brasília. O objetivo da atividade foi proporcionar aos alunos a oportunidade de conhecer o funcionamento do tribunal, entender as políticas institucionais e aprender sobre as diferentes profissões que atuam no ambiente jurídico.
+<br>
+Durante a visita, os estudantes puderam conhecer as instalações do STJ, assistir a explicações sobre o papel da Corte no sistema judiciário brasileiro e conversar com profissionais das áreas do Direito, da administração e da comunicação institucional. A atividade contribuiu para ampliar o conhecimento dos alunos sobre o Poder Judiciário e reforçar a importância da cidadania e da ética profissional.</p>
+<img src="./src/mat1.jpeg" alt="matéria 1">
+      </article>
 
-  <main>
-    <article class="main-news">
-      <img src="https://source.unsplash.com/1100x400/?city,news" alt="Notícia principal">
-      <h2>Governo anuncia novo pacote econômico para 2026</h2>
-      <p>O governo divulgou nesta segunda-feira um conjunto de medidas que visam impulsionar o crescimento e reduzir o desemprego. Especialistas avaliam que o plano deve ter impacto significativo na economia nacional.</p>
-    </article>
-
-    <aside>
-      <h3>Últimas Notícias</h3>
-      <ul>
-        <li><a href="#">Mercado financeiro fecha em alta após anúncio econômico</a></li>
-        <li><a href="#">Times se preparam para a final do campeonato nacional</a></li>
-        <li><a href="#">Artista lança novo álbum e domina as redes sociais</a></li>
-        <li><a href="#">Chuva intensa causa alagamentos no sul do país</a></li>
-      </ul>
-    </aside>
-  </main>
+      <aside>
+        <h3>Últimas Notícias</h3>
+        <ul>
+          <li><a href="#">Mercado financeiro fecha em alta após anúncio econômico</a></li>
+          <li><a href="#">Times se preparam para a final do campeonato nacional</a></li>
+          <li><a href="#">Artista lança novo álbum e domina as redes sociais</a></li>
+          <li><a href="#">Chuva intensa causa alagamentos no sul do país</a></li>
+        </ul>
+      </aside>
+    </main>?
+  </div>
 
   <footer>
     © 2025 Jornal Agora — Inspirado no G1. Todos os direitos reservados.
