@@ -4,172 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jornal Agora — Notícias em tempo real</title>
-  <style>
-    /* ---------- ESTILOS GERAIS ---------- */
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
-    }
-
-    header {
-      background-image: linear-gradient(to right, #DC8014, #DCAD01, #0801D1);
-      color: #fff;
-      padding: 15px 0;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    div#imgs {
-      
-    }
-    div#imgs img {
-      mix-blend-mode: multiply;
-      height: 150px;
-      width: 220px;
-      border-radius: 150px;
-    }
-    nav {
-      background-color: #001f3d;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #fff;
-      padding: 12px 20px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #7a0f08;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 20px auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
-    }
-
-    article {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    .main-news img {
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    .main-news h2 {
-      color: #DC8014;
-      margin: 15px 0 10px;
-    }
-
-    .main-news p {
-      font-size: 16px;
-      line-height: 1.5;
-      color: #444;
-    }
-
-    aside {
-      background: #fff;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    aside h3 {
-      color: #DC8014;
-      border-bottom: 2px solid #c4170c;
-      padding-bottom: 5px;
-    }
-
-    aside ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    aside li {
-      margin: 10px 0;
-    }
-
-    aside a {
-      text-decoration: none;
-      color: #222;
-      transition: color 0.3s;
-    }
-
-    aside a:hover {
-      color: #c4170c;
-    }
-
-    footer {
-      text-align: center;
-      background: #222;
-      color: #fff;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-    p {
-      text-align: justify;
-    }
-
-    /* ---------- RESPONSIVIDADE ---------- */
-    
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="flexx">
+
+  <div id="flexx"> <!-- div para ocupação de espaço -->
+
+    <!-- aside para menu de navegação detalhado -->
+    <aside id="menu">
+      <nav>
+        <ul>
+
+          <li> <a href="#main-news">STJ</a> </li>
+
+          <li> <a href="#">Turma ???</a> </li>
+
+          <li> <a href="#">Técnico em ???</a> </li>
+
+          <li> <a href="#">Visita à ???</a> </li> 
+
+          <li> <a href="#">Evento de Esportes</a> </li>
+
+        </ul>
+      </nav>
+    </aside>
+    
+    <!-- banner do site -->
     <header>
-      <div id="imgs">
-      <img src="./src/newlogojornal.jpg" alt="Logo jornal"></div>
+
+      <div id="imgLogo">
+        <img src="./src/newlogojornal.jpg" alt="Logo jornal"> <!-- colocar easter egg que quando clicar na logo apareça uma animação com o nome de todos os membros da equipe -->
       </div>
+
     </header>
 
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Política</a>
-      <a href="#">Economia</a>
-      <a href="#">Esportes</a>
-      <a href="#">Entretenimento</a>
-      <a href="#">Tecnologia</a>
+    <!-- navegação entre tópicos -->
+    <nav id="navTops">
+
+      <!-- botão de abertura do menu -->
+      <div id="menuOpen">
+
+      </div>
+
+      <a href="#">Tópico 1</a>
+      <a href="#">Tópico 2</a>
+      <a href="#">Tópico 3</a>
+      <a href="#">Tópico 4</a>
+      <a href="#">Tópico 5</a>
+      <a href="#">Tópico 6</a>
+      <a href="#aboutUs">Sobre Nós</a>
+
     </nav>
 
+    <!-- conteúdo principal do jornal -->
     <main>
-      <article class="main-news">
+
+      <!-- matéria -->
+      <article id="STJ" class="news">
+
         <h2>Visita ao STJ</h2>
+
         <p>No dia 08/10/2025, a turma 160 realizou uma visita técnica ao Superior Tribunal de Justiça (STJ), em Brasília. O objetivo da atividade foi proporcionar aos alunos a oportunidade de conhecer o funcionamento do tribunal, entender as políticas institucionais e aprender sobre as diferentes profissões que atuam no ambiente jurídico.
-<br>
-Durante a visita, os estudantes puderam conhecer as instalações do STJ, assistir a explicações sobre o papel da Corte no sistema judiciário brasileiro e conversar com profissionais das áreas do Direito, da administração e da comunicação institucional. A atividade contribuiu para ampliar o conhecimento dos alunos sobre o Poder Judiciário e reforçar a importância da cidadania e da ética profissional.</p>
-<img src="./src/mat1.jpeg" alt="matéria 1">
+        <br>
+        Durante a visita, os estudantes puderam conhecer as instalações do STJ, assistir a explicações sobre o papel da Corte no sistema judiciário brasileiro e conversar com profissionais das áreas do Direito, da administração e da comunicação institucional. A atividade contribuiu para ampliar o conhecimento dos alunos sobre o Poder Judiciário e reforçar a importância da cidadania e da ética profissional.</p>
+
+        <img src="./src/mat1.jpeg" alt="matéria 1">
+
       </article>
 
+      <!-- aside com notícias principais (tem que ser decidido se mantém ou não) -->
       <aside>
-        <h3>Últimas Notícias</h3>
+
+        <h3>Últimas Nóticias/Notícias mais relevantes</h3> <!-- tem que ser definido qual dos dois, caso seja aprovado a permanência dessa aside -->
+
         <ul>
-          <li><a href="#">Mercado financeiro fecha em alta após anúncio econômico</a></li>
-          <li><a href="#">Times se preparam para a final do campeonato nacional</a></li>
-          <li><a href="#">Artista lança novo álbum e domina as redes sociais</a></li>
-          <li><a href="#">Chuva intensa causa alagamentos no sul do país</a></li>
+          <li><a href="#">Notícia relevante 1</a></li>
+          <li><a href="#">Notícia relevante 2</a></li>
+          <li><a href="#">Notícia relevante 3</a></li>
+          <li><a href="#">Notícia relevante 4</a></li>
         </ul>
+
       </aside>
-    </main>?
+
+    </main>
+
+    <!-- sobre nós -->
+    <section id="aboutUs">
+
+      <div></div>
+
+    </section>
+
   </div>
 
+  <!-- footer do site -->
   <footer>
     © 2025 Jornal Agora — Inspirado no G1. Todos os direitos reservados.
   </footer>
+
+
+  <!-- script do site -->
+  <script src="./script.js"></script>
 
 </body>
 </html>

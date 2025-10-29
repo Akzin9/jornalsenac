@@ -1,0 +1,179 @@
+    /* PC */
+    body {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      min-height: 100vh; 
+    }
+
+    /* div para ocupar todo o espaço restante */
+    div#flexx {
+      flex: 1;
+    }
+
+    /* banner do site */
+    header { 
+      background-image: linear-gradient(to right, #F7941D, #cea40f, #0012b1);
+      padding: 10px 0;
+      text-align: center;
+    }
+    div#imgLogo {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+    div#imgLogo img {
+      mix-blend-mode: darken;
+      height: 20vh;
+      width: 14%;
+      border-radius: 30%;
+    }
+
+    /* navegação pelos tópicos do site */
+    nav#navTops {
+      background-color: #001f3d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav#navTops a {
+      color: #fff;
+      padding: 1% 1%;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 0.3s;
+    }
+
+    nav#navTops a:hover {
+      background-color: #F7941D;
+    }
+
+    /* conteúdo principal (matérias)*/
+    main {
+      max-width: 65%;
+      margin: 2% auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2%;
+    }
+
+    article {
+      background: #fff;
+      padding: 4% 8% 4% 8%;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+    .news img {
+      width: 100%;
+      border-radius: 15px;
+      border: 3px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(45deg, #F7941D, 50%, black, 0%, #004A8D) border-box; /* a porcentagem é quando para pra trocar de cor, se for 10% ent vai parar nos 10% a primeira cor e vai usar o restante da porcentagem (90%) para trocar para azul. OBS: tem como usar graus para definir o comportamento do gradient.*/
+      margin-top: 1%;
+      box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .news h2 {
+      color: #F7941D;
+      margin: 0% 0% 0% 0%;
+      cursor: default;
+    }
+
+    .news p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* aside das matérias principais (temporário ou não, tem que ser votado) */
+    main aside {
+      background: #fff;
+      padding: 5%;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    main aside h3 {
+      color: #F7941D;
+      border-bottom: 2px solid #06018d;
+      padding-bottom: 5%;
+      cursor: default;
+    }
+
+    main aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    main aside li {
+      margin: 3% 0;
+    }
+
+    main aside a {
+      text-decoration: none;
+      color: #F7941D;
+      transition: color 0.3s;
+    }
+
+    main aside a:hover {
+      color: #004A8D;
+    }
+
+    /* footer do site */
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 1%;
+      font-size: 14px;
+    }
+
+    /* formatação correta de todos os parágrafos */
+    p {
+      text-align: justify;
+    }
+
+    /* aside de navegação detalhada */
+    aside#menu {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      background-color: #001f3d;
+      height: 100vh;
+      width: 14%;
+      position: fixed;
+      animation: menuOpen;
+    }
+    aside#menu nav {
+        margin-top: 15%;
+    }
+    aside#menu nav li {
+        list-style: none;
+        padding: 0;
+    }
+    aside#menu nav a {
+        text-decoration: none;
+        color: #F7941D;
+        font-weight: 700;
+        transition: color 0.3s;
+    }
+    aside#menu nav a:hover {
+        color: #006ed4;
+    }
+    @keyframes menuOpen {
+        from {
+
+        }
+        to {
+
+        }
+    }
+
+    /* MOBILE (600+ x 600+) */
+    /* vou ter que arrumar a proporção da logo do jornal  */
