@@ -22,9 +22,15 @@ function opMenu() {
 };
 
 let main = document.querySelector("main");
+let navTop = document.querySelector("nav#navTops");
 
 
 function criarNews(id, title, content, imgPath) {
+    let newA = document.createElement("a");
+    newA.setAttribute("href", id);
+    newA.textContent = title;
+    navTop.appendChild(newA);
+
     let newArt = document.createElement("article");
     newArt.classList.add("news");
     newArt.setAttribute("id", id);
