@@ -11,11 +11,12 @@
   <div id="flexx"> <!-- div para ocupação de espaço -->
 
     <!-- aside para menu de navegação detalhado -->
-    <aside id="menu">
+    <aside id="menu" style="display: none;">
+      <h3>Navegação pelas matérias</h3>
       <nav>
         <ul>
 
-          <li> <a href="#main-news">STJ</a> </li>
+          <li> <a href="#STJ">STJ</a> </li>
 
           <li> <a href="#">Turma ???</a> </li>
 
@@ -33,7 +34,7 @@
     <header>
 
       <div id="imgLogo">
-        <img src="./src/newlogojornal.jpg" alt="Logo jornal"> <!-- colocar easter egg que quando clicar na logo apareça uma animação com o nome de todos os membros da equipe -->
+        <img src="./src/newlogojornal.jpg" alt="Logo jornal" id="imgLog"> <!-- colocar easter egg que quando clicar na logo apareça uma animação com o nome de todos os membros da equipe -->
       </div>
 
     </header>
@@ -42,8 +43,10 @@
     <nav id="navTops">
 
       <!-- botão de abertura do menu -->
-      <div id="menuOpen">
-
+      <div id="menuOpen" class="opM" onclick="opMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
       <a href="#">Tópico 1</a>
@@ -58,7 +61,19 @@
 
     <!-- conteúdo principal do jornal -->
     <main>
+    <!-- aside com notícias principais (tem que ser decidido se mantém ou não) -->
+          <aside>
 
+            <h3>Últimas Nóticias/Notícias mais relevantes</h3> <!-- tem que ser definido qual dos dois, caso seja aprovado a permanência dessa aside -->
+
+            <ul>
+              <li><a href="#">Notícia relevante 1</a></li>
+              <li><a href="#">Notícia relevante 2</a></li>
+              <li><a href="#">Notícia relevante 3</a></li>
+              <li><a href="#">Notícia relevante 4</a></li>
+            </ul>
+
+          </aside>
       <!-- matéria -->
       <article id="STJ" class="news">
 
@@ -71,20 +86,6 @@
         <img src="./src/mat1.jpeg" alt="matéria 1">
 
       </article>
-
-      <!-- aside com notícias principais (tem que ser decidido se mantém ou não) -->
-      <aside>
-
-        <h3>Últimas Nóticias/Notícias mais relevantes</h3> <!-- tem que ser definido qual dos dois, caso seja aprovado a permanência dessa aside -->
-
-        <ul>
-          <li><a href="#">Notícia relevante 1</a></li>
-          <li><a href="#">Notícia relevante 2</a></li>
-          <li><a href="#">Notícia relevante 3</a></li>
-          <li><a href="#">Notícia relevante 4</a></li>
-        </ul>
-
-      </aside>
 
     </main>
 
