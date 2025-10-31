@@ -15,13 +15,16 @@
     /* div para ocupar todo o espaço restante */
     div#flexx {
       flex: 1;
+      margin-bottom: 110%;
     }
 
     /* banner do site */
     header { 
-      background-image: linear-gradient(to right, #F7941D, #cea40f, #0012b1);
-      padding: 10px 0;
+      background-image: linear-gradient(to right, #F7941D, 50%, black, 10%, #0012b1);
+      margin-top: 3.6%;
+      padding: 2% 0;
       text-align: center;
+      border-bottom: 2px solid black;
     }
     div#imgLogo {
       display: flex;
@@ -30,15 +33,20 @@
       justify-content: center;
     }
     div#imgLogo img {
-      mix-blend-mode: darken;
+      /* mix-blend-mode: darken; */
       height: 20vh;
       width: 14%;
       border-radius: 30%;
+      border: 3px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(to right, #0012b1, 50%, black, 10%, #F7941D) border-box;
     }
 
     /* navegação pelos tópicos do site */
     nav#navTops {
       background-color: #001f3d;
+      position: fixed;
+      width: 100%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -59,9 +67,9 @@
     /* conteúdo principal (matérias)*/
     main {
       max-width: 65%;
-      margin: 2% auto;
+      margin: 2% auto 5% auto;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr;
       gap: 2%;
     }
 
@@ -93,41 +101,6 @@
       line-height: 1.5;
       color: #444;
     }
-
-    /* aside das matérias principais (temporário ou não, tem que ser votado) */
-    main aside {
-      background: #fff;
-      padding: 5%;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    main aside h3 {
-      color: #F7941D;
-      border-bottom: 2px solid #06018d;
-      padding-bottom: 5%;
-      cursor: default;
-    }
-
-    main aside ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    main aside li {
-      margin: 3% 0;
-    }
-
-    main aside a {
-      text-decoration: none;
-      color: #F7941D;
-      transition: color 0.3s;
-    }
-
-    main aside a:hover {
-      color: #004A8D;
-    }
-
     /* footer do site */
     footer {
       text-align: center;
@@ -267,6 +240,7 @@
       width: 200%;
       margin-left: 35.6%;
       justify-content: start;
+      /* mudar height */
     }
     div#imgLogo img {
       mix-blend-mode:darken;
@@ -335,42 +309,6 @@
       line-height: 1.5;
       color: #444;
     }
-
-    /* aside das matérias principais (temporário ou não, tem que ser votado) */
-    main aside {
-      background: #fff;
-      padding: 5%;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      margin-bottom: 5%;
-    }
-
-    main aside h3 {
-      color: #F7941D;
-      border-bottom: 2px solid #06018d;
-      padding-bottom: 5%;
-      cursor: default;
-    }
-
-    main aside ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    main aside li {
-      margin: 3% 0;
-    }
-
-    main aside a {
-      text-decoration: none;
-      color: #F7941D;
-      transition: color 0.3s;
-    }
-
-    main aside a:hover {
-      color: #004A8D;
-    }
-
     /* footer do site */
     footer {
       text-align: center;
