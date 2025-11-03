@@ -345,7 +345,7 @@
   }
   
   /* notebook */
-  @media screen and (min-width: 1301px) and (max-width: 1522px) {
+  @media screen and (min-width: 1200px) and (max-width: 1522px) {
     body, html {
       height: 100%;
     }
@@ -690,7 +690,7 @@
   }
 
   /* tablet */
-  @media screen and (min-width: 600px) and (max-width: 1300px) {
+  @media screen and (min-width: 600px) and (max-width: 1199px) {
     body, html {
       height: 100%;
     }
@@ -1376,4 +1376,5 @@
       margin: 0% 0% 0% 0%;
       cursor: default;
     } 
+
   }
