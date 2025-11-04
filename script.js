@@ -81,17 +81,24 @@ function criarVid(h2, id) {
     let newArt1 = document.createElement("article");
     let newA3 = document.createElement("a");
     let divSub = document.createElement("div");
+    let ul = document.querySelector("ul");
+    let newLi2 = document.createElement("li");
+    let newA4 = document.createElement("a");
 
-    newA3.textContent = "Entrevistas";
+    newA3.textContent = "Entrevistas Vídeos";
     divSub.setAttribute("id", "subDiv");
     newA3.setAttribute("href", "#" + id);
+    newA4.setAttribute("href", "#" + id);
     newArt1.setAttribute("id", id);
     navTop.appendChild(newA3);
 
     // Título da aba
     newH2_1.textContent = h2;
+    newA4.textContent = h2;
 
     // tags criadas no site
+    ul.appendChild(newLi2);
+    newLi2.appendChild(newA4);
     main.appendChild(newArt1);
     newArt1.appendChild(newH2_1);
     newArt1.appendChild(divSub);
@@ -118,6 +125,7 @@ function newVid(title, duration, path ) {
 
     // atribuição de atributos
     video.setAttribute("src", path);
+    video.setAttribute("preload", "metadata");
     video.classList.add("vids");
     divVid.classList.add("divVids");
 
@@ -137,7 +145,7 @@ criarNews("outRosa" , "Outubro Rosa", 'Outubro Rosa é mais do que uma campanha 
 criarNews("TI", "Apresentação da TI", 'No dia 17, a turma 160 realizou uma série de entrevistas com os alunos da turma de TI do professor Jean, com o objetivo de conhecer e analisar projetos web desenvolvidos pelos estudantes. Entre os trabalhos apresentados, destacaram-se dois sites: Nalamina, uma plataforma voltada para profissionais de beleza como cabeleireiros e barbeiros, e SiC, um sistema criado para auxiliar professores do Senac na organização e gestão de salas. A atividade proporcionou uma rica troca de experiências entre as turmas, permitindo aos alunos explorar soluções inovadoras e observar na prática a aplicação dos conhecimentos de desenvolvimento web. O encontro reforçou o potencial criativo dos estudantes e evidenciou o compromisso do Senac em incentivar projetos que atendem demandas reais do mercado e do ambiente educacional.', "./src/algum trem de TI.jpeg");
 
 // Aba de vídeos
-criarVid("Entrevistas", "interview");
+criarVid("Entrevistas Vídeos", "interview");
 
 // adição dos vídeos
 
@@ -157,10 +165,16 @@ criarNews("Agosto", "Agosto Lilás", 'Além disso, os estudantes organizaram uma
 criarNews("153", "Fim da Turma 153", 'No dia 1º de setembro de 2025, a turma 153 encerrou oficialmente sua aprendizagem, concluindo um importante ciclo de estudos e vivências dentro da instituição. Ao longo desse período, os alunos participaram de atividades, projetos e desafios que contribuíram para sua formação profissional e pessoal, fortalecendo a preparação para novas etapas em suas trajetórias. Esse encerramento marcou também a transição de responsabilidades, uma vez que a turma finalizou o trabalho com o jornal, repassando a continuidade desse projeto às turmas mais novas. Esse registro, fruto de dedicação coletiva, ficará como parte da memória da instituição. Durante esse período, tiveram como instrutores a professora Aline e Marlon, que acompanharam de perto o crescimento de cada aluno e foram fundamentais no processo de ensino. Juntos, também foram responsáveis pelo jornal da turma, um projeto que marcou a trajetória da 153 por registrar acontecimentos, conquistas e reflexões. No mesmo dia, a turma 153 passou o Jornal do Senac para a turma 160. Eles mostraram o site, contaram como foi a experiência de montar o jornal e deram várias dicas sobre a organização e o processo de criação, já que concluíram a aprendizagem recentemente. ', "./src/turma153.jpeg");
 
 // Simulação de Incêndio
-criarNews("fire", "Simulação de Incêndio", 'Simulação de Incêndio Mobiliza Técnicos de Segurança em Treinamento Preventivo 01/08/2025 — Na manhã desta sexta-feira, os técnicos de segurança promoveram uma simulação de incêndio com o objetivo de reforçar os protocolos de evacuação e ampliar a conscientização sobre medidas de prevenção. A atividade ocorreu de forma controlada e seguiu todos os padrões de segurança estabelecidos pelas normas técnicas. Durante a ação, colaboradores e voluntários participaram do exercício prático, que envolveu o acionamento de alarmes, utilização de extintores e a evacuação rápida das áreas de risco. A simulação também contou com a orientação dos técnicos de segurança, que avaliaram o tempo de resposta, a organização das rotas de fuga e o uso correto dos equipamentos de combate a incêndio. Segundo os organizadores, o treinamento é fundamental para garantir que, em uma situação real, todos saibam como agir com calma e eficiência. “A prevenção salva vidas, e a preparação é a chave para reduzir riscos em emergências”, destacou um dos responsáveis pela equipe técnica. A simulação encerrou-se sem incidentes, sendo considerada um sucesso pela coordenação. Novas edições estão previstas para os próximos meses, visando manter o ambiente de trabalho cada vez mais seguro.', "./src/saúde.jpeg");
+criarNews("fire", "Simulação de Incêndio", 'Simulação de Incêndio Mobiliza Técnicos de Segurança em Treinamento Preventivo 05/09/2025 — Na manhã desta sexta-feira, os técnicos de segurança promoveram uma simulação de incêndio com o objetivo de reforçar os protocolos de evacuação e ampliar a conscientização sobre medidas de prevenção. A atividade ocorreu de forma controlada e seguiu todos os padrões de segurança estabelecidos pelas normas técnicas. Durante a ação, colaboradores e voluntários participaram do exercício prático, que envolveu o acionamento de alarmes, utilização de extintores e a evacuação rápida das áreas de risco. A simulação também contou com a orientação dos técnicos de segurança, que avaliaram o tempo de resposta, a organização das rotas de fuga e o uso correto dos equipamentos de combate a incêndio. Segundo os organizadores, o treinamento é fundamental para garantir que, em uma situação real, todos saibam como agir com calma e eficiência. “A prevenção salva vidas, e a preparação é a chave para reduzir riscos em emergências”, destacou um dos responsáveis pela equipe técnica. A simulação encerrou-se sem incidentes, sendo considerada um sucesso pela coordenação. Novas edições estão previstas para os próximos meses, visando manter o ambiente de trabalho cada vez mais seguro.', "./src/saúde.jpeg");
 
 // Curicaca
 criarNews("curicaca", "Visita ao Curicaca", 'No dia 08/10/2025, as turmas de TI, com os instrutores Jean e Bruno, fizeram uma visita técnica ao Curicaca (CRCC) para vivenciar na prática o uso da tecnologia e conhecer projetos do centro.', "./src/curicaca.jpeg");
+
+// Troca de gestão do jornal
+// Nova Coordenação do Jornal
+
+// Na segunda-feira, 1º de setembro de 2025, a turma 153 passou o jornal do Senac para a turma 160.
+// Eles mostraram o site, contaram como foi a experiência de montar o jornal e deram várias dicas sobre a organização e o processo de criação, já que concluíram a aprendizagem recentemente. 
 
 // sistema de play dos vídeos
 let vids = document.getElementsByClassName("vids");

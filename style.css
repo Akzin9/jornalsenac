@@ -345,7 +345,7 @@
   }
   
   /* notebook */
-  @media screen and (min-width: 1200px) and (max-width: 1522px) {
+  @media screen and (min-width: 1024px) and (max-width: 1522px) {
     body, html {
       height: 100%;
     }
@@ -547,7 +547,7 @@
       border-bottom: 1px black;
       border-radius: 5px;
       border-style: solid;
-      margin: 2% auto 4% auto; 
+      margin: 7% auto 5% auto; 
       width: 60%;
       height: 8%;
       background-color: #001f3d;
@@ -606,7 +606,7 @@
     section#aboutUs {
       max-width: 90%;
       margin: -5% auto 0% auto;
-      margin-bottom: -15%;
+      margin-bottom: -5%;
       display: flex;
       flex-direction: column;
       
@@ -690,7 +690,7 @@
   }
 
   /* tablet */
-  @media screen and (min-width: 600px) and (max-width: 1199px) {
+  @media screen and (min-width: 600px) and (max-width: 1023px) {
     body, html {
       height: 100%;
     }
@@ -894,7 +894,7 @@
       border-style: solid;
       margin: 7% auto 5% auto; 
       width: 60%;
-      height: 7%;
+      height: 4%;
       background-color: #001f3d;
     }
     span {
@@ -1234,7 +1234,7 @@
     }
     div#menuOpen div{
       border-bottom: 1px black;
-      border-radius: 5px;
+      border-radius: 15px;
       border-style: solid;
       margin: 10% auto 5% auto; 
       width: 60%;
@@ -1295,7 +1295,7 @@
     section#aboutUs {
       max-width: 90%;
       margin: -5% auto 0% auto;
-      margin-bottom: 10%;
+      margin-bottom: 13%;
       display: flex;
       flex-direction: column;
       
