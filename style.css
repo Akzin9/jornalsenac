@@ -645,7 +645,6 @@
       text-align: justify;
       max-width: 100%;
       max-height: auto;
-      overflow-y: scroll;
     }
 
     /* aba de vídeos */
@@ -990,7 +989,6 @@
       text-align: justify;
       max-width: 100%;
       max-height: auto;
-      overflow-y: scroll;
     }
 
     /* aba de vídeos */
@@ -1036,7 +1034,7 @@
 
   /* mobile */
 
-  @media screen and (min-width: 340px) and (max-width: 599px) {
+  @media screen and (min-width: 320px) and (max-width: 599px) {
       body, html {
       height: 100%;
     }
@@ -1334,7 +1332,6 @@
       text-align: justify;
       max-width: 100%;
       max-height: auto;
-      overflow-y: scroll;
     }
 
     /* aba de vídeos */
@@ -1378,4 +1375,5 @@
     } 
 
   }
+
 
