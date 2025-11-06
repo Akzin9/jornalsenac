@@ -1,0 +1,7 @@
+adicionar animação no aside de menu
+adicionar barra de busca
+dar uma repaginada no estilo da aside do menu
+repensar a estruturação dos tópicos
+adicionar bordas animadas
+adicionar animações simples na página, como no redirecionamento para deixar mais fluido
+fazer com que as matérias do menu aside sejam uma lista opcional de se abrir

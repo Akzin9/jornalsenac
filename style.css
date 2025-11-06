@@ -143,6 +143,7 @@
         border-bottom: 1px white solid;
         text-align: justify;
         margin-bottom: 10%;
+        margin-left: -10%;
     }
     aside#menu nav a {
         text-decoration: none;
@@ -496,6 +497,7 @@
         border-bottom: 1px white solid;
         text-align: justify;
         margin-bottom: 10%;
+        margin-left: -20%;
     }
     aside#menu nav a {
         text-decoration: none;
@@ -841,6 +843,7 @@
         border-bottom: 1px white solid;
         text-align: justify;
         margin-bottom: 10%;
+        margin-left: -20%;
     }
     aside#menu nav a {
         text-decoration: none;
@@ -1187,6 +1190,7 @@
         border-bottom: 1px white solid;
         text-align: justify;
         margin-bottom: 10%;
+        margin-left: -20%;
     }
     aside#menu nav a {
         text-decoration: none;
