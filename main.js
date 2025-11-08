@@ -20,6 +20,6 @@ function closeMe() {
         aside.classList.add("closeMenuAnim");
         setTimeout(() => {
             aside.style.display = "none";
-        }, 600);
+        }, 500);
     };
 };

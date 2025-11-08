@@ -1,8 +1,11 @@
-adicionar animação no aside de menu
-dar uma repaginada no estilo da aside do menu
+dar uma repaginada no estilo da aside do menu (após a adição abaixo)
+fazer com que as matérias do menu aside sejam uma lista opcional de se abrir
+após o matérias recentes/antigas vai ter um sinal de ^ (ao contrário desse) para abrir e outro ^ para fechar a lista, quando a lista abrir ela vai adicionar cada item com animação aos poucos e pra fechar vai remover mais rápido do que adicionou
+se inspirar na lista da amazon 
+após terminar essas alterações já comitar na main como novo update do site
+
 repensar a estruturação dos tópicos
 adicionar animações simples na página, como no redirecionamento para deixar mais fluido
 
-fazer com que as matérias do menu aside sejam uma lista opcional de se abrir
 adicionar bordas animadas
 adicionar barra de busca
