@@ -180,6 +180,48 @@
           color: #006ed4;
       }
 
+      /* notícias velhas e novas */
+
+      aside#menu li#newNL {
+        display: none;
+      }
+
+      aside#menu li#oldNL {
+        display: none;
+      }
+
+      /* animação notícias */
+
+      div.containerOC {
+        position: absolute;
+        margin-top: -7%;
+        margin-left: 55%;
+        background-color: rgba(255, 255, 255, 0.452);
+        width: 12%;
+        height: 3%;
+      }
+      
+      div.trace1 {
+
+      }
+
+      div.trace1_1 {
+
+      }
+
+      div.trace2 {
+
+      }
+
+      div.trace2_2 {
+
+      }
+
+      /* a ideia é fazer uma div com addEventListener para abrir e fechar a lista, tendo animação nessa parte tbm */
+
+      /* aside#menu li#newNL:nth-child(1) {animation-delay: 0.3s;}; */
+      /* essa é a ideia da animação com delay */
+
       /* animação de abertura da aside */
 
       .openMenuAnim {

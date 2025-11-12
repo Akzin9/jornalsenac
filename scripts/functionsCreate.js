@@ -40,6 +40,7 @@ export function createOldNews(id, title, content, imgPath) {
     let newA2 = document.createElement("a");
 
     newA2.innerHTML = title;
+    newLi.setAttribute("id", "oldNL");
     newA2.setAttribute("href", "#" + id)
 
     // coloca as tags na lista
@@ -77,6 +78,7 @@ export function criarNewNews(id, title, content, imgPath) {
     let newA2 = document.createElement("a");
 
     newA2.innerHTML = title;
+    newLi.setAttribute("id", "newNL");
     newA2.setAttribute("href", "#" + id)
 
     // coloca as tags na lista
