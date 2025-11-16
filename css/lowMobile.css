@@ -1,6 +1,6 @@
   /* mobile */
 
-  @media screen and (min-width: 446px) and (max-width: 599px) {
+  @media screen and (min-width: 340px) and (max-width: 445px) {
     
     body, html {
     height: 100%;
@@ -150,7 +150,7 @@
   }
 
   aside#menu nav {
-      width: 80%;
+      width: 86%;
   }
 
   aside#menu nav li {
@@ -235,8 +235,8 @@
       /* animação notícias */
       div.containerOC {
         position: absolute;
-        margin-top: -8%;
-        margin-left: 56%;
+        margin-top: -11%;
+        margin-left: 67%;
         width: 12%;
         height: 3%;
         cursor: pointer;
@@ -265,7 +265,6 @@
       }
 
       /* Animação abrir e fechar a lista do aside */
-
 
       /* abrir NewList */
       .openListNew {

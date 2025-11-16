@@ -3,6 +3,7 @@ let navTop = document.querySelector("nav#navTops");
 
 //coloca as matérias na área de tópicos
 export function createTopic(id, title) {
+
     // notícias adicionadas à parte de tópicos
     let newA = document.createElement("a");
     newA.setAttribute("href", "#" + id);
@@ -40,7 +41,7 @@ export function createOldNews(id, title, content, imgPath) {
     let newA2 = document.createElement("a");
 
     newA2.innerHTML = title;
-    newLi.setAttribute("id", "oldNL");
+    newLi.classList.add("oldNL");
     newA2.setAttribute("href", "#" + id)
 
     // coloca as tags na lista
@@ -78,7 +79,7 @@ export function criarNewNews(id, title, content, imgPath) {
     let newA2 = document.createElement("a");
 
     newA2.innerHTML = title;
-    newLi.setAttribute("id", "newNL");
+    newLi.classList.add("newNL");
     newA2.setAttribute("href", "#" + id)
 
     // coloca as tags na lista
@@ -88,6 +89,7 @@ export function criarNewNews(id, title, content, imgPath) {
 
 // Function para criar aba de vídeos
 export function criarVid(h2, id) {
+
     // cria as tags
     let newH2_1 = document.createElement("h2");
     let newArt1 = document.createElement("article");
@@ -118,6 +120,7 @@ export function criarVid(h2, id) {
 
 // function para adicionar os vídeos
 export function newVid(title, duration, path ) {
+    
     // variáveis de criação e referência
     let subVid = document.getElementById("subDiv");
     let divVid = document.createElement("div");

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/tablet.css">
   <link rel="stylesheet" href="./css/notebook.css">
+  <link rel="stylesheet" href="./css/lowMobile.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 
     <!-- aside para menu de navegação detalhado -->
     <aside id="menu" style="display: none;">
-      <h3>Navegação pelas matérias</h3>
+      <h3>Navegação pelas Matérias</h3>
       <div id="closeM" onclick="closeMe()">
         <div id="x1"></div>
         <div id="x2"></div>
@@ -23,7 +24,7 @@
       <nav>
         <ul><!-- lista de matérias recentes -->
 
-          <li><span class="separateMenu">Matérias recentes</span> <div class="containerOC"><div class="trace1"></div><div class="trace1_1"></div></div></li>
+          <li><span class="separateMenu">Matérias Recentes</span> <div class="containerOC closeListNew" id="openCloseListNew"><div class="trace1"></div><div class="trace1_1"></div></div></li>
 
           <ul id="newNews">
 
@@ -32,7 +33,7 @@
         </ul>
 
         <ul><!-- lista de matérias antigas -->
-          <li><span class="separateMenu">Matérias antigas</span> <div class="containerOC"><div class="trace2"></div><div class="trace2_1"></div></div></li>
+          <li><span class="separateMenu">Matérias Antigas</span> <div class="containerOC closeListOld" id="openCloseListOld"><div class="trace1"></div><div class="trace1_1"></div></div></li>
 
           <ul id="oldNews">
 
@@ -48,7 +49,6 @@
     </aside>
 
     <!-- navegação entre tópicos -->
-
     <nav id="navTops">
 
       <!-- botão de abertura do menu -->
@@ -74,8 +74,7 @@
     <!-- conteúdo principal do jornal -->
     <main>
           
-      <!-- matéria -->
-
+    <!-- matéria -->
     </main>
 
     <!-- sobre nós -->
@@ -105,9 +104,8 @@
   </footer>
 
   <!-- script do site -->
-  
-  <script src="./main.js"></script>
   <script type="module" src="./scripts/functionsExec.js"></script>
   <script src="./scripts/functionsCreate.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

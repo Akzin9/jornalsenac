@@ -20,7 +20,6 @@ createTopic("TI", "Apresentação da TI");
 criarVid("Entrevistas Vídeos", "interview");
 
 // adição dos vídeos
-
 newVid("Apresentação do Jornalista", "Duração: 00:15", "./src/vids/ApresentaçãoDavi.mp4");
 newVid("Entrevista Com a Instrutora Márcia", "Duração: 02:48", "./src/vids/marcia.mp4");
 newVid("Entrevista Sobre o SIC", "Duração: 07:35", "./src/vids/SiCnew.mp4");
@@ -50,7 +49,7 @@ createTopic("curicaca", "Visita ao Curicaca");
 // Nova coordenação do Jornal
 criarNewNews("160", "Nova Coordenação do Jornal para a Turma 160", "Na segunda-feira, 1º de setembro de 2025, a turma 153 passou o jornal do Senac para a turma 160. Eles mostraram o site, contaram como foi a experiência de montar o jornal e deram várias dicas sobre a organização e o processo de criação, já que concluíram a aprendizagem recentemente.", "./src/festa junina.jpeg");
 
-//Notícias Antigas
+  //Notícias Antigas
 
 // palestra abril verde
 createOldNews("abrilGr", "Palestra Abril Verde", "Palestra com a psicóloga Silvânia Lobo. No dia 23 de junho, alunos do Senac Sobradinho participaram de uma palestra com a psicóloga Silvânia Lobo, que abordou ansiedade, depressão e automutilação. A profissional destacou a importância da escuta, acolhimento e empatia, utilizando uma dinâmica com massinhas de modelar como metáfora das marcas deixadas pelas experiências emocionais. O evento reforçou a necessidade de romper o silêncio, buscar ajuda psicológica e criar ambientes acolhedores.", "./src/abril verde.jpeg");
@@ -146,9 +145,12 @@ let vids = document.getElementsByClassName("vids");
 for (let i = 0; i < vids.length; i++) {
 
   vids[i].addEventListener("play", () => {
+
     // Quando um vídeo começa a tocar, pausa todos os outros
     for (let j = 0; j < vids.length; j++) {
+      
       if (j !== i) {
+
         vids[j].pause();
       };
     };
@@ -156,10 +158,13 @@ for (let i = 0; i < vids.length; i++) {
 
   // play/pause ao clicar
   vids[i].addEventListener("click", () => {
+
     if (vids[i].paused) {
+
       vids[i].volume = (0.5);
       vids[i].play();
     } else {
+
       vids[i].pause();
     };
   });
