@@ -1,8 +1,11 @@
-site do jornal senac
+Página do jornal senac
 
-membros:
+Membros:
 L. Miguel
 L. Davi
 L. Carlos
 M. Kamily
 Davi
+Victtor
+
+Version: 2.0

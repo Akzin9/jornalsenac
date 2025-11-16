@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jornal Agora — Notícias em tempo real</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/pc.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/notebook.css">
+  <link rel="stylesheet" href="./css/lowMobile.css">
 </head>
 <body>
 
@@ -12,21 +16,39 @@
 
     <!-- aside para menu de navegação detalhado -->
     <aside id="menu" style="display: none;">
-      <h3>Navegação pelas matérias</h3>
+      <h3>Navegação pelas Matérias</h3>
       <div id="closeM" onclick="closeMe()">
         <div id="x1"></div>
         <div id="x2"></div>
       </div>
       <nav>
-        <ul><!-- lista de matérias --></ul>
+        <ul><!-- lista de matérias recentes -->
+
+          <li><span class="separateMenu">Matérias Recentes</span> <div class="containerOC closeListNew" id="openCloseListNew"><div class="trace1"></div><div class="trace1_1"></div></div></li>
+
+          <ul id="newNews">
+
+          </ul>
+
+        </ul>
+
+        <ul><!-- lista de matérias antigas -->
+          <li><span class="separateMenu">Matérias Antigas</span> <div class="containerOC closeListOld" id="openCloseListOld"><div class="trace1"></div><div class="trace1_1"></div></div></li>
+
+          <ul id="oldNews">
+
+          </ul>
+
+        </ul>
+
         <ul>
           <li> <a href="#aboutUs">Sobre Nós</a> </li>
         </ul>
+
       </nav>
     </aside>
 
     <!-- navegação entre tópicos -->
-
     <nav id="navTops">
 
       <!-- botão de abertura do menu -->
@@ -52,8 +74,7 @@
     <!-- conteúdo principal do jornal -->
     <main>
           
-      <!-- matéria -->
-
+    <!-- matéria -->
     </main>
 
     <!-- sobre nós -->
@@ -64,7 +85,7 @@
         <div id="gridD">
           <div id="grid1">
             <h3>Equipe:<br></h3>
-            <p>Luiz Miguel<br>Luis Davi<br>Luiz Carlos<br>Maria Kamily<br>Davi Soares</p>
+            <p>Luiz Miguel<br>Luis Davi<br>Luiz Carlos<br>Maria Kamily<br>Davi Soares<br>Victtor Hugo</p>
           </div>
           <div id="grid2">
             <p id="lastT">Essa página foi criada por Davi Soares.<br>O projeto do jornal foi criado pela turma 153 e passado para a turma 160. Essa página é o resultado do trabalho de todos.</p>
@@ -83,7 +104,8 @@
   </footer>
 
   <!-- script do site -->
-  <script src="./script.js"></script>
-
+  <script type="module" src="./scripts/functionsExec.js"></script>
+  <script src="./scripts/functionsCreate.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
