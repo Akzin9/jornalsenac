@@ -262,7 +262,7 @@
         border-radius: 15px;
         rotate: 135deg;
         margin-left: 40%;
-        margin-top: -2%;
+        margin-top: -1.5%;
       }
 
       /* Animação abrir e fechar a lista do aside */
@@ -366,7 +366,7 @@
       border-bottom: 1px black;
       border-radius: 5px;
       border-style: solid;
-      margin: 7% auto 5% auto; 
+      margin: 5% auto 5% auto; 
       width: 60%;
       height: 8%;
       background-color: #001f3d;
