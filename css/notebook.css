@@ -53,7 +53,7 @@
                   linear-gradient(to right, #0012b1, 50%, black, 10%, #F7941D) border-box;
     }
 
-    /* navegação pelos tópicos do site *
+    /* navegação pelos tópicos do site */
     nav#navTops {
       background-color: #001f3d;
       position: fixed;
