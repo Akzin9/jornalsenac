@@ -8,4 +8,6 @@ M. Kamily
 Davi
 Victtor
 
+Desenvolvedor da página: Davi
+
 Version: 2.0
