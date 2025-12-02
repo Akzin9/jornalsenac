@@ -1,6 +1,6 @@
   /* notebook */
 
-  @media screen and (min-width: 1024px) and (max-width: 1650px) {
+  @media screen and (min-width: 1024px) and (max-width: 1650.9px) {
 
     body, html {
       height: 100%;
@@ -167,6 +167,7 @@
         font-weight: 700;
         transition: color 0.3s;
         padding: 0%;
+        transition: 0.3s;
         font-size: 14pt;
         font-size: 20pt;
     }
@@ -182,7 +183,7 @@
     }
 
     /* enfeites da aside */
-    aside#menu nav a:hover {
+    aside#menu a:hover {
         color: #006ed4;
     }
 
@@ -243,6 +244,10 @@
         cursor: pointer;
         transition: 0.3s;
         scale: 80%;
+      }
+
+      div.containerOC:hover {
+        transform: scale(1.2);
       }
       
       div.trace1 {
@@ -351,14 +356,14 @@
     /* botão para abrir aside do menu */
     div#menuOpen {
       background-color: #F7941D;
-      width: 7%;
+      width: 5.5%;
       height: auto;
       margin-left: 2.1%;
       cursor: pointer;
       padding: 0.5;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
-      transition: filter 0.3s;
+      transition: 0.3s;
       border-radius: 10px;
     }
 
@@ -366,9 +371,9 @@
       border-bottom: 1px black;
       border-radius: 5px;
       border-style: solid;
-      margin: 5% auto 5% auto; 
+      margin: 6% auto 5% auto; 
       width: 60%;
-      height: 8%;
+      height: 7%;
       background-color: #001f3d;
     }
 
@@ -379,6 +384,7 @@
       align-items: center;
       font-weight: 700;
       font-size: 18pt;
+      cursor: default;
     }
 
     /* close menu div */
@@ -415,11 +421,13 @@
 
     div#closeM:hover {
       rotate: 90deg;
+      transform: scale(1.1);
       filter: brightness(0.5)
     }
 
     /* enfeites da div open menu */
     div#menuOpen:hover {
+      transform: scale(1.1);
       filter: brightness(0.6);
     }
 

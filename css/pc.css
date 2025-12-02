@@ -234,6 +234,10 @@
         transition: 0.3s;
         scale: 80%;
       }
+
+      div.containerOC:hover {
+        transform: scale(1.05);
+      }
       
       div.trace1 {
         width: 60%;
@@ -341,7 +345,7 @@
         cursor: pointer;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        transition: filter 0.3s;
+        transition: 0.3s;
         border-radius: 15px;
       }
 
@@ -361,6 +365,7 @@
         align-items: center;
         font-weight: 700;
         font-size: 15pt;
+        cursor: default;
       }
   
       /* close menu div */
@@ -397,11 +402,13 @@
 
       div#closeM:hover {
         rotate: 90deg;
-        filter: brightness(0.5)
+        transform: scale(1.05);
+        filter: brightness(0.5);
       }
   
       /* enfeites da div open menu */
       div#menuOpen:hover {
+        transform: scale(1.05);
         filter: brightness(0.6);
       }
 
