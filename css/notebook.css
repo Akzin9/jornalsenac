@@ -1,6 +1,6 @@
   /* notebook */
 
-  @media screen and (min-width: 1024px) and (max-width: 1650.9px) {
+  @media screen and (min-width: 1024px) and (max-width: 1666.9px) {
 
     body, html {
       height: 100%;
@@ -371,7 +371,7 @@
       border-bottom: 1px black;
       border-radius: 5px;
       border-style: solid;
-      margin: 6% auto 5% auto; 
+      margin: 5% auto 5% auto; 
       width: 60%;
       height: 7%;
       background-color: #001f3d;
